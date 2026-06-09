@@ -1,17 +1,21 @@
 # su26-ai301-contribution
 
-# Contribution [#]: [Issue Title]
+# Contribution [#]: Improve accessibility and styles for event form when editing with keyboard [#1060]
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+
+**Contribution Number:** 1 
+**Student:** Wany Muhimuzi  
+**Issue:** https://github.com/SwitchbackTech/compass-calendar/issues/1060
+**Status:** [Phase I ]
 
 ---
 
 ## Why I Chose This Issue
+In the past, I've worked on frontend work, and I enjoyed. One thing I wish I had more time to work on is working with different types of elements, as we only had 3 months to build a website from complete scratch, including blueprinting  
+1. I've worked on frontend work before but not as much as I wanted to do. I want to work on frontend work before I move over to backend to slowly work bring me to working through harder issues.
+2. There is a paper trail about the issue, so if I have questions, I can also go back and look at issues related to the one I am working on.
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+From reading, my main goal is to help improve the quality of the user interface in regards to adding an event to the calender.
 
 ---
 
@@ -19,11 +23,12 @@
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+The issue  is to improve the user's ability to edit any events that are in their calendar while staying in the flow
 
 ### Expected Behavior
 
-[What should happen?]
+
+Because it is a style change, what needs to happen is that when adding an event, a window will pop up and look different from the rest of the page without looking too distracted
 
 ### Current Behavior
 
