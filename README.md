@@ -6,7 +6,7 @@
 **Contribution Number:** 1 
 **Student:** Wany Muhimuzi  
 **Issue:** https://github.com/SwitchbackTech/compass-calendar/issues/1060
-**Status:** [Phase I ]
+**Status:** [Phase II ]
 
 ---
 
@@ -43,51 +43,59 @@ Because it is a style change, what needs to happen is that when adding an event,
 ## Reproduction Process
 
 ### Environment Setup
+Using the project's README.md via GitHub, I was able to set up the environment. One issue is that a package called Bun was used, and it is not commonly used among college students.
 
-[Notes on setting up your local development environment - challenges you faced, how you solved them]
+Working branch: https://github.com/WanyGM/compass-calendar/tree/fix-issue-1060
 
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. Navigate to https://compasscalendar.com/ or local host  http://localhost:9080
+2. Click a time in the day schedule
+3. Using the Tab key, navigate through the process to add an event as you look at what is highlighted
+4. **Expected:** User will navigate through Title, Event Type, Time (start and End), Repeat, Description, Save and then repeat
+5. 5. **Actual:** After the user gets to Save, what is highlighted is no longer visible; it is not keyboard-friendly.
 
 ### Reproduction Evidence
 
-- **Commit showing reproduction:** [Link to commit in your fork]
-- **Screenshots/logs:** [If applicable]
-- **My findings:** [What you discovered during reproduction]
+- **Commit showing reproduction:** https://github.com/WanyGM/compass-calendar/tree/fix-issue-1060
+- **Screenshots/logs:** 
+
+https://github.com/user-attachments/assets/b1271576-b539-4d7a-9eea-6bd3a47ecb24
+
+
+- **My findings:** When navigating with only the keyboard, the event creation form does not maintain a clearly visible focus state after saving. This makes it unclear where the user is on the page after the action completes.]
 
 ---
 
 ## Solution Approach
 
 ### Analysis
-
-[Your analysis of the root cause - what's causing the issue?]
+When navigating with only the keyboard, the event creation form does not maintain a clearly visible focus state after saving. This makes it unclear where the user is on the page after the action completes. This makes the interface confusing for keyboard-only users because they lose track of where they are in the form if they are not ready to save and want to return to the title to make any changes.
 
 ### Proposed Solution
 
-[High-level description of your fix approach]
+After an event is being created but changes need to be changed, focus should be moved to a predictable and visible element, such as the event title field or another appropriate part of the event form and also the ablity to check enter for make selection for event type, time, repeat and save.
 
 ### Implementation Plan
 
 Using UMPIRE framework (adapted):
 
-**Understand:** [Restate the problem]
+**Understand:** Keyboard users should be able to complete the entire event creation process without using a mouse
+**Match:** There are shortcuts to navigate the website if the the "?" key to open the shortcuts
 
-**Match:** [What similar patterns/solutions exist in the codebase?]
+**Plan:** 
+1.Locate the components responsible for Event Type, Time, Repeat, and Save.
+2.Ensure each control can be activated using the Enter key in addition to mouse interaction.
+3.Update focus management so that focus remains visible and moves to a logical location after saving or going back to make changes.
+4.Verify that keyboard navigation using Tab and Enter behaves consistently across the event form.
 
-**Plan:** [Step-by-step implementation plan]
-1. [Modify file X to do Y]
-2. [Add function Z]
-3. [Update tests]
+**Implement:** https://github.com/WanyGM/compass-calendar/tree/fix-issue-1060
 
-**Implement:** [Link to your branch/commits as you work]
+**Review:** 
+Commit 4 hours / week for a minimum of six months
+Respond to our internal chats within 24 hours M-F.
 
-**Review:** [Self-review checklist - does it follow the project's contribution guidelines?]
-
-**Evaluate:** [How will you verify it works?]
+**Evaluate:** Going through the process of creating an event without using my mouse or my touchscreen to ensure smooth navigation through the event form.
 
 ---
 
