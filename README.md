@@ -6,7 +6,7 @@
 **Contribution Number:** 1 
 **Student:** Wany Muhimuzi  
 **Issue:** https://github.com/SwitchbackTech/compass-calendar/issues/1060
-**Status:** [Phase II ]
+**Status:** [Phase III]
 
 ---
 
@@ -103,26 +103,40 @@ Respond to our internal chats within 24 hours M-F.
 
 ### Unit Tests
 
-- [ ] Test case 1: [Description]
-- [ ] Test case 2: [Description]
-- [ ] Test case 3: [Description]
+- [ ] Test case 1: [Test that the Event Type control can be selected using the Enter key]
+- [ ] Test case 2: [Test that the Repeat control can be selected using the Enter key]
+- [ ] Test case 3: [Test that the Save button can be selected using the Enter key]
 
 ### Integration Tests
 
-- [ ] Integration scenario 1
-- [ ] Integration scenario 2
+- [ ] Test that a user can navigate through the event form using only the keyboard.
+- [ ] Test that focus remains visible after saving an event.
 
 ### Manual Testing
 
-[What you tested manually and results]
+[The event form can be navigated with the Tab key.
+I started fixing keyboard selection for Event Type and Repeat.
+Some repeat selection behavior still needs additional work.
+After saving, focus still needs to be checked to make sure it remains visible and predictable.]
 
 ---
 
 ## Implementation Notes
 
-### Week [X] Progress
+### Week [June 18 - 25, 2026] Progress
 
-[What you built this week, challenges faced, decisions made]
+[What I worked on:
+Set up and reviewed the event form code.
+Worked on fixing keyboard selection for the Event Type control.
+Started working on keyboard selection for the Repeat control.
+Reviewed how the form handles Tab navigation, Enter selection, and the Save action.
+
+Challenges faced:
+The project uses Bun, so I had to become familiar with that setup.
+While preparing to push my changes, I realized I needed to run git pull. So before pushing, I stashed my branch and did a git pull.
+After pulling the latest changes, it looked like some of my local work may have been removed or overwritten.
+I need to confirm whether the work was deleted, merged, or recoverable through Git history.
+]
 
 ### Week [Y] Progress
 
