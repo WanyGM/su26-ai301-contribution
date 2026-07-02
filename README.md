@@ -138,9 +138,17 @@ After pulling the latest changes, it looked like some of my local work may have 
 I need to confirm whether the work was deleted, merged, or recoverable through Git history.
 ]
 
-### Week [Y] Progress
+### Week [June 26 - July 1, 2026] Progress
 
-[Continue documenting as you work]
+[What I worked on : 
+]Re-evaluated my initial implementation and decided that removing the changes was the best course of action. Although the code worked to some extent, it did not function the way I wanted or provide the user experience I was aiming for.
+The time spent on the initial implementation gave me a much better understanding of the repository structure and helped me identify which files and components would need to be modified if I decide to revisit this approach later.
+Created a dummy account so I could explore the application with full access to the event creation and management features. This provided a better understanding of how the event workflow is intended to function and gave me additional context for the accessibility improvements.
+Continued reviewing the event form and keyboard interactions to better understand the existing implementation before making further changes.
+
+Challenges faced:
+One challenge was recognizing when it was better to step back rather than continue building on an approach that was not meeting my goals. Although deleting my changes was disappointing, it was the right decision and prevented me from adding unnecessary complexity.
+I also realized that taking a break from the project was necessary. During that time, the repository continued to receive updates, which meant I needed to revisit the application with a fresh perspective and account for changes that had been made since I last worked on it.
 
 ### Code Changes
 
