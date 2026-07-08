@@ -150,11 +150,23 @@ Challenges faced:
 One challenge was recognizing when it was better to step back rather than continue building on an approach that was not meeting my goals. Although deleting my changes was disappointing, it was the right decision and prevented me from adding unnecessary complexity.
 I also realized that taking a break from the project was necessary. During that time, the repository continued to receive updates, which meant I needed to revisit the application with a fresh perspective and account for changes that had been made since I last worked on it.
 
+### Week [July 1 - July 5, 2026] Progress
+[What I worked on : 
+Continued implementing keyboard accessibility improvements for the event creation form.
+Updated the keyboard navigation so users can tab through the event panel using the Tab key.
+Implemented keyboard navigation for the Event Type selector. Once the selector has focus, users can now use the Left and Right Arrow keys to move between the available event types without using a mouse.
+Tested the new keyboard behavior to ensure the navigation worked as expected while moving through the event form.
+Continued reviewing the remaining controls to identify where similar keyboard support should be added.
+Challenges faced:
+One challenge was determining the most intuitive keyboard interactions for the event form while keeping the behavior consistent with the rest of the application.
+I spent time understanding how the event components manage focus and keyboard events before making changes.
+Although the Event Type selector is now keyboard accessible, additional work is still needed to provide similar functionality for the remaining controls, such as Repeat, Time, and the focus behavior after saving an event.
+
 ### Code Changes
 
-- **Files modified:** [List]
+- **Files modified:** [SaveSection.tsx, PrioritySection.tsx]
 - **Key commits:** [Links to important commits]
-- **Approach decisions:** [Why you chose certain approaches]
+- **Approach decisions:** [My primary focus was to ensure that users could continue navigating the event panel using the Tab key while adding keyboard support for the Event Type selector. I chose to use the Left and Right Arrow keys for selecting event types because this interaction is intuitive for navigating between multiple options. I also plan to make these keyboard shortcuts more discoverable by displaying them either near the Event Type section or within the existing keyboard shortcuts panel.]
 
 ---
 
@@ -168,7 +180,7 @@ I also realized that taking a break from the project was necessary. During that 
 - [Date]: [Summary of feedback received]
 - [Date]: [How you addressed it]
 
-**Status:** [Awaiting review / Iterating / Approved / Merged]
+**Status:** [Awaiting review ]
 
 ---
 
