@@ -11,7 +11,7 @@
 ---
 
 ## Why I Chose This Issue
-In the past, I've worked on frontend work, and I enjoyed. One thing I wish I had more time to work on is working with different types of elements, as we only had 3 months to build a website from complete scratch, including blueprinting  
+I chose this issue because I wanted to gain more experience with frontend development and accessibility. Although I have worked on frontend projects before, I wanted to deepen my understanding of how keyboard interactions and user interface accessibility are implemented in a larger open-source project.  
 1. I've worked on frontend work before but not as much as I wanted to do. I want to work on frontend work before I move over to backend to slowly work bring me to working through harder issues.
 2. There is a paper trail about the issue, so if I have questions, I can also go back and look at issues related to the one I am working on.
 
@@ -22,21 +22,20 @@ From reading, my main goal is to help improve the quality of the user interface 
 ## Understanding the Issue
 
 ### Problem Description
-
-The issue  is to improve the user's ability to edit any events that are in their calendar while staying in the flow
+The primary goal of this issue is to improve keyboard accessibility within the event creation form. Users should be able to navigate the form using only the keyboard, clearly identify which element currently has focus, and complete the entire event creation process without relying on a mouse.
 
 ### Expected Behavior
 
-
-Because it is a style change, what needs to happen is that when adding an event, a window will pop up and look different from the rest of the page without looking too distracted
+TUsers can navigate to the event title and title the event, select a event type, pick a timefrem for the event, and then save. It will later show in teh calender within that time frame.
 
 ### Current Behavior
 
-[What actually happens?]
+[Users can navigate to the event title, but keyboard navigation does not fully support selecting an event type, interacting with other controls, or completing the save process efficiently]
 
 ### Affected Components
 
-[Which parts of the codebase are involved?]
+[PrioritySection.tsx EventTypeSection.tsx
+EventForm.tsx and SaveSection.tsx]
 
 ---
 
@@ -172,15 +171,14 @@ Although the Event Type selector is now keyboard accessible, additional work is 
 
 ## Pull Request
 
-**PR Link:** [GitHub PR URL when submitted]
 
-**PR Description:** [Draft or final PR description - much of the content above can be adapted]
+**PR Description:** [https://github.com/SwitchbackTech/compass-calendar/pull/1968]
 
 **Maintainer Feedback:**
-- [Date]: [Summary of feedback received]
-- [Date]: [How you addressed it]
+- [July 8th]: [They had thank me for my time but my PR did meet the requirement for new contributors]
+- [July 11]: [I gave it a thumbs, because following the message the issue was closed ]
 
-**Status:** [Awaiting review ]
+**Status:** [Reviewed ]
 
 ---
 
@@ -188,20 +186,20 @@ Although the Event Type selector is now keyboard accessible, additional work is 
 
 ### Technical Skills Gained
 
-[What you learned technically]
+[Throughout this contribution, I learned how to use AI more effectively when working on projects that I was unfamiliar with. Instead of expecting AI to provide complete solutions, I learned how to ask better questions, use it to understand unfamiliar code, and verify my own ideas. I also gained experience working with new development tools, particularly Bun, which was my first time using an alternative JavaScript runtime and package manager. Learning how Bun fits into the project's development workflow helped me become more comfortable adapting to new technologies.]
 
 ### Challenges Overcome
 
-[What was hard and how you solved it]
+[One of the biggest challenges I faced was learning when and how to rely on AI. At first, I found it difficult to know when to trust AI's suggestions because I was still trying to understand the project's codebase. Rather than continuing to make changes that I didn't fully understand, I decided to slow down and focus on learning how the project worked first. I spent time understanding Bun, the project structure, and how the different components interacted before continuing development. This approach helped me build confidence and gave me a much stronger understanding of the repository. By the end of this contribution, I was using AI as a learning tool and a guide instead of depending on it to solve problems for me.]
 
 ### What I'd Do Differently Next Time
 
-[Reflection on your process]
+[If I were to start another open-source contribution, I would spend more time reading the project's CONTRIBUTING.md before writing any code. Although solving the technical problem is important, the contribution guidelines often provide valuable information about the project's expectations, coding standards, and workflow. Understanding those requirements earlier would have helped me plan my work more effectively and avoid spending time on approaches that did not align with the maintainers' expectations.]
 
 ---
 
 ## Resources Used
 
-- [Link to helpful documentation]
-- [Tutorial or Stack Overflow post that helped]
-- [GitHub issues or discussions that helped]
+- [Bun.com]
+- [https://pyk.sh/cookbooks/typescript/how-to-listen-for-keyboard-shortcuts]
+
