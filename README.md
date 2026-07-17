@@ -6,7 +6,7 @@
 **Contribution Number:** 1 
 **Student:** Wany Muhimuzi  
 **Issue:** https://github.com/SwitchbackTech/compass-calendar/issues/1060
-**Status:** [Phase III]
+**Status:** [Phase IV]
 
 ---
 
