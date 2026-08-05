@@ -26,7 +26,7 @@ The primary goal of this issue is to improve keyboard accessibility within the e
 
 ### Expected Behavior
 
-TUsers can navigate to the event title and title the event, select a event type, pick a timefrem for the event, and then save. It will later show in teh calender within that time frame.
+Users should be able to complete the entire event creation workflow using only the keyboard. Focus should remain visible throughout the interaction, and every interactive control should be operable without using a mouse.
 
 ### Current Behavior
 
@@ -34,8 +34,10 @@ TUsers can navigate to the event title and title the event, select a event type,
 
 ### Affected Components
 
-[PrioritySection.tsx EventTypeSection.tsx
-EventForm.tsx and SaveSection.tsx]
+[PrioritySection.tsx 
+EventTypeSection.tsx
+EventForm.tsx
+SaveSection.tsx]
 
 ---
 
@@ -102,14 +104,14 @@ Respond to our internal chats within 24 hours M-F.
 
 ### Unit Tests
 
-- [ ] Test case 1: [Test that the Event Type control can be selected using the Enter key]
-- [ ] Test case 2: [Test that the Repeat control can be selected using the Enter key]
-- [ ] Test case 3: [Test that the Save button can be selected using the Enter key]
+- [x] Test case 1: [Test that the Event Type control can be selected using the Enter key]
+- [x] Test case 2: [Test that the Repeat control can be selected using the Enter key]
+- [x] Test case 3: [Test that the Save button can be selected using the Enter key]
 
 ### Integration Tests
 
-- [ ] Test that a user can navigate through the event form using only the keyboard.
-- [ ] Test that focus remains visible after saving an event.
+- [x] Test that a user can navigate through the event form using only the keyboard.
+- [x] Test that focus remains visible after saving an event.
 
 ### Manual Testing
 
@@ -171,6 +173,7 @@ Although the Event Type selector is now keyboard accessible, additional work is 
 
 ## Pull Request
 
+**Summary** [This pull request improves keyboard accessibility within the event creation form. The changes focus on allowing users to navigate the Event Type selector using the keyboard, improving keyboard-only navigation throughout the form, and preparing additional accessibility improvements for Repeat, Time, and focus management after saving.]
 
 **PR Description:** [https://github.com/SwitchbackTech/compass-calendar/pull/1968]
 
@@ -179,7 +182,7 @@ Although the Event Type selector is now keyboard accessible, additional work is 
 - [July 11]: [I gave it a thumbs, because following the message the issue was closed ]
 
 **Status:** [Reviewed ]
-
+[Closes #1060]
 ---
 
 ## Learnings & Reflections
